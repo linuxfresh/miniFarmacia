@@ -57,7 +57,6 @@ bool Producto::guardar(DBConnector& db) {
 
 // Listar productos
 
-/*
 void Producto::listar(DBConnector& db) {
     string sql = "SELECT id, nombre, categoria, precio, stock FROM productos;";
     db.query(sql, [](int argc, char** argv, char** colNames) -> int {
@@ -70,10 +69,9 @@ void Producto::listar(DBConnector& db) {
     });
 }
 
-*/
 
 // Listar productos
-void Producto::listar(DBConnector& db) {
+/* void Producto::listar(DBConnector& db) {
     string sql = "SELECT id, nombre, categoria, precio, stock FROM productos;";
 
     bool headerPrinted = false;
@@ -97,7 +95,7 @@ void Producto::listar(DBConnector& db) {
 
         return 0;
     });
-}
+} */
 
 
 // Actualizar producto
